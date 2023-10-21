@@ -1,4 +1,66 @@
+:root{
+    --cor-verde: hsl(158, 36%, 37%);
+
+}
+
 body{
-    width: 950px;
-    height: 800px;
+    max-width: 1440px;
+    min-width: 375px;
+    display:flex;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.tudo{
+    display: flex;
+    width: 670px;
+    height: 500px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1 10 hsl(212, 21%, 14%);
+}
+
+.parte-esquerda{
+    display: flex;
+    position: relative;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    
+}
+.parte-direita{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction:column;
+    background-color: hsl(0, 0%, 100%) ;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-left: 2rem;
+}
+.titulo{
+    font-size: 35px;
+}
+.marca{
+
+}
+.marca-paragrafo{
+
+}
+.precos{
+    display: flex;
+    gap: 30px;
+}
+.preco-desconto{
+
+}
+.preco-real{
+
+}
+.add{
+    background-color: var(--cor-verde);
 }
