@@ -1,66 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 :root{
     --cor-verde: hsl(158, 36%, 37%);
-
+    --cor-fundo: hsl(30, 38%, 92%);
+    --cor-branca: hsl(0, 0%, 100%);
+    --cor-very-dark-blue: hsl(212, 21%, 14%);
+    --cor-dark-grayish-blue: hsl(228, 12%, 48%);
+    --fonte-mont: 'MontSerrat', sans-serif;
+    --fonte-fraunces: 'Fraunces', sans-serif;
 }
 
 body{
     max-width: 1440px;
     min-width: 375px;
     display:flex;
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cor-fundo);
+    font-size: 14px;
+    font-family: var(--fonte-mont);
 }
 
 .tudo{
     display: flex;
-    width: 670px;
-    height: 500px;
-    align-items: center;
+    width: 570px;
+    height: 430px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 1 10 hsl(212, 21%, 14%);
+    font-family: var(--fonte-mont);
+    color: var(--cor-dark-grayish-blue);
+}
+#imagem{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 275px;
+    height: 100%;
 }
 
-.parte-esquerda{
-    display: flex;
-    position: relative;
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-    
-}
 .parte-direita{
     display: flex;
     position: relative;
-    align-items: center;
+    justify-content: center;
     flex-direction:column;
-    background-color: hsl(0, 0%, 100%) ;
+    gap: 20px;
+    background-color: var(--cor-branca);
     width: 100%;
     height: 100%;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-left: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .titulo{
-    font-size: 35px;
+    position: relative;
+    display: flex;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: smaller;
+    padding-top: 10px;
 }
 .marca{
-
+    display: flex;
+    position: relative;
+    font-family: var(--fonte-fraunces);
+    color: var(--cor-very-dark-blue);
+    font-weight: 700;
+    font-size: xx-large;
+    line-height: 1;
+    padding-right: 10px;
 }
 .marca-paragrafo{
-
+    display: flex;
+    position: relative;
+    padding-right: 10px;
+    color: var(--cor);
+    line-height: 1.5;
+    bottom: 10px;
 }
 .precos{
     display: flex;
-    gap: 30px;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+    color: var(--cor-verde);
+    bottom: 20px;
 }
 .preco-desconto{
-
+    font-family: var(--fonte-fraunces);
+    font-size: xx-large;
 }
 .preco-real{
-
+    text-decoration: line-through;
+    font-size: small;
 }
 .add{
     background-color: var(--cor-verde);
+    color: var(--cor-branca);
+    width: 100%;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    gap: 10px;
+    bottom: 10px;
 }
