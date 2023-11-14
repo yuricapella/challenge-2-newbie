@@ -108,3 +108,65 @@ body{
     gap: 10px;
     bottom: 10px;
 }
+
+@media(max-width: 375px){
+    body{
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tudo{
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        height: 812px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 150px;
+    }
+
+    #imagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-bottom-left-radius: 0;
+        width: 350px;
+        border-top-right-radius: 11px;
+        border-top-left-radius: 11px;
+        object-position: right 1px bottom 125px;
+        filter: brightness(0.90);
+    }
+    .parte-direita{
+        display: flex;
+        position: relative;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        align-items: left;
+        text-align: left;
+        bottom: 247px;
+    }
+
+    .titulo{
+        top: 15px;
+        font-size: small;
+        
+    }
+    .marca{
+        top: 5px;
+    }
+    .marca-paragrafo{
+        bottom: 10px;
+        font-size: medium;
+        line-break: ;
+    }
+
+
+
+    .attribution{
+        display: none;
+    }
+}
