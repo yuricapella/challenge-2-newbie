@@ -160,8 +160,13 @@ body{
     }
     .marca-paragrafo{
         bottom: 10px;
-        font-size: medium;
-        line-break: ;
+        width: 292px;
+    }
+    .precos{
+        bottom: 20px;
+    }
+    .add{
+        bottom: 25px;
     }
 
 
